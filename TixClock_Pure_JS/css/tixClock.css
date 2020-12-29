@@ -1,0 +1,91 @@
+body {
+	background-color: #0e0707;
+}
+
+tbody > tr {
+	border: 0 none transparent;
+	height: 100%;
+	width: 100%;
+	background: grey;
+}
+
+td {
+	border-right: 20px solid grey;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+td[colspan] {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.col {
+	border: 2px solid darkgrey;
+	height: 80px;
+	width: 80px;
+	border-radius: 5%;
+	box-shadow: -7px -5px 5px rgba(43, 40, 40, 0.904);
+	margin: 10px;
+}
+
+.on {
+	background-color: #d419d4;
+}
+
+.hours.decimal > .row > .on {
+	background-color: #1e90ff;
+	background: radial-gradient(dodgerblue, #121d96);
+}
+
+.hours.unit > .row > .on {
+	background-color: #90ee90;
+	background: radial-gradient(rgb(58, 230, 43), #108b10);
+}
+
+.minutes.decimal > .row > .on {
+	background-color: aqua;
+	background: radial-gradient(aqua, rgb(11, 155, 155));
+}
+
+.minutes.unit > .row > .on {
+	background-color: #dc143c;
+	background: radial-gradient(rgb(221, 38, 123), #920622);
+}
+
+.seconds.decimal > .row > .on {
+	background-color: #ffd700;
+	background: radial-gradient(closest-side, rgb(236, 210, 61), #e6cb35, gold);
+}
+
+.seconds.unit > .row > .on {
+	background-color: orange;
+	background: radial-gradient(closest-side, rgb(243, 187, 82), orange);
+}
+
+.seconds.binary > .row > .on {
+	background-color: orange;
+	background: radial-gradient(rgb(233, 94, 228), #d419d4);
+}
+
+.row {
+	border: 2px none #fff;
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -12px;
+	margin-left: -12px;
+}
+
+.log {
+	align-items: center;
+	text-align: center;
+}
+
+.hours,
+.hours.decimal,
+.minutes,
+.minutes.decimal,
+.seconds,
+.seconds.decimal {
+	background-color: grey;
+}
